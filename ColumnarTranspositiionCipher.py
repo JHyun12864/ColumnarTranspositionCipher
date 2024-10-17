@@ -7,3 +7,6 @@ for i in range(len(key)-1):
     for j in range(int(i+1),len(key)):
         if(key[i] == key[j]):
             print("중복된 단어가 있습니다. \n키 값을 다시 입력해주세요.")
+
+# 펑문 입력 받기
+# 암호키의 순서 = 평문을 배열하는 열의 개수(table 이용할 예정)
