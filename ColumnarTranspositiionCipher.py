@@ -30,6 +30,27 @@ print(this_keydic)
 
 # 암호키의 길이 = 평문을 배열하는 열의 개수(list? table? 이용할 예정)
 
-# row, column = 2,3
-# arr_2d = [[None]*column for i in range(row)]
-# print(arr_2d)
+if(len(PLAINTEXT)%len(key) == 0):
+    row = int(len(PLAINTEXT)/len(key))
+else:
+    row = int(len(PLAINTEXT)/len(key))+1
+
+
+column = len(key)
+arr2 = []
+
+
+for i in range(row): # 행
+    for j in range(column): # 열
+        [[arr2.append(None)]*column] # 흠 ... 2차원 list의 코드는 이렇게 작성하는거 아닌듯
+
+print("arr2 = %s" % arr2)
+
+
+print("length plaintext = %d" % len(PLAINTEXT))
+print("length key = %d" % len(key))
+print("row = %d" % row)
+
+
+arr = [[None]*column for i in range(row)]
+print("arr = \n%s" % arr)
