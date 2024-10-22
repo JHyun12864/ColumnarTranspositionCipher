@@ -39,7 +39,7 @@ else:
 column = len(key)
 arr = [[None]*column for i in range(row)]
 
-# list 행렬에 PLAINTEXT 할당하기
+# list 행렬에 PLAINTEXT 할당하기.
 k = 0
 for i in range(row):
     for j in range(column):
