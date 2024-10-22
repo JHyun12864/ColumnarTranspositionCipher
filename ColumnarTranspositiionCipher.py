@@ -37,14 +37,20 @@ else:
 
 
 column = len(key)
-arr2 = []
+arr = [[None]*column for i in range(row)]
+
+# list 행렬에 PLAINTEXT 할당하기
+k = 0
+for i in range(row):
+    for j in range(column):
+        arr[i][j] = PLAINTEXT[k]
+        k+=1
 
 
-for i in range(row): # 행
-    for j in range(column): # 열
-        [[arr2.append(None)]*column] # 흠 ... 2차원 list의 코드는 이렇게 작성하는거 아닌듯
 
-print("arr2 = %s" % arr2)
+
+
+
 
 
 print("length plaintext = %d" % len(PLAINTEXT))
@@ -52,5 +58,5 @@ print("length key = %d" % len(key))
 print("row = %d" % row)
 
 
-arr = [[None]*column for i in range(row)]
+
 print("arr = \n%s" % arr)
