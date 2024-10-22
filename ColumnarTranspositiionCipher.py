@@ -1,6 +1,7 @@
 #주상 전치 암호
 
 # 암호키 입력 받기(중복되는 단어가 없어야 함.)
+# def Input_Key(key, PLAINTEXT): return arr
 key = "BRAIN"
 
 for i in range(len(key)-1):
@@ -47,16 +48,12 @@ for i in range(row):
         k+=1
 
 
+# BLOCK_SIZE, 열에 배열된 문자 갯수, 암호 블록 크기
+# 각 열을 읽은 후, 붙여서 암호문 만들기
+# def Cipher(arr): return
 
 
 
 
 
 
-print("length plaintext = %d" % len(PLAINTEXT))
-print("length key = %d" % len(key))
-print("row = %d" % row)
-
-
-
-print("arr = \n%s" % arr)
