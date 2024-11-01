@@ -8,6 +8,7 @@ for i in range(len(key)-1):
     for j in range(int(i+1),len(key)):
         if(key[i] == key[j]):
             print("중복된 단어가 있습니다. \n키 값을 다시 입력해주세요.")
+            break
 
 # 펑문 입력 받기
 PLAINTEXT = "ABCDEFGHIJKLMNOPQRSTVWXYZ"
